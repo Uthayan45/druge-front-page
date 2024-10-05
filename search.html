@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="search.css">
+    <title>Search</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="intext.html">Logout</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="tracking.html">Tracking</a>
+        <a href="search.html">Search</a>
+    </div>
+
+    <div class="search-container">
+        <h2>Search Data</h2>
+
+        <!-- Search Filters -->
+        <div class="search-filters">
+            <label for="search-query">Search Keyword:</label>
+            <input type="text" id="search-query" placeholder="Enter a keyword or phrase" />
+
+            <label for="search-platform">Platform:</label>
+            <select id="search-platform">
+                <option value="all">All</option>
+                <option value="facebook">Facebook</option>
+                <option value="twitter">Twitter</option>
+                <option value="instagram">Instagram</option>
+            </select>
+
+            <label for="search-status">Status:</label>
+            <select id="search-status">
+                <option value="all">All</option>
+                <option value="suspicious">Suspicious</option>
+                <option value="confirmed">Confirmed</option>
+            </select>
+
+            <label for="search-date">Date:</label>
+            <input type="date" id="search-date" />
+
+            <button id="search-btn">Search</button>
+        </div>
+
+        <!-- Search Results -->
+        <div id="search-results">
+            <!-- Search results will be dynamically populated here -->
+        </div>
+    </div>
+
+    <script src="search.js"></script>
+</body>
+</html>

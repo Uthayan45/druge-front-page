@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="intext.html">Logout</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="tracking.html">Tracking</a>
+        <a href="search.html">Search</a>
+    </div>
+
+    <div class="dashboard-container">
+        <h2>Dashboard</h2>
+
+        <!-- Alerts Section -->
+        <div class="section">
+            <h3>Recent Alerts</h3>
+            <div id="alerts-list">
+                <!-- Alerts will be dynamically populated here -->
+            </div>
+        </div>
+
+        <!-- User Activity Section -->
+        <div class="section">
+            <h3>Recent User Activity</h3>
+            <div id="activity-list">
+                <!-- Activity data will be dynamically populated here -->
+            </div>
+        </div>
+        
+        <!-- Statistics Section -->
+        <div class="section">
+            <h3>Statistics</h3>
+            <div class="stats">
+                <div>
+                    <h4>Total Incidents</h4>
+                    <p id="total-incidents">Loading...</p>
+                </div>
+                <div>
+                    <h4>Active Investigations</h4>
+                    <p id="active-investigations">Loading...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

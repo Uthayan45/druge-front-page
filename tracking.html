@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="track.css">
+    <title>Tracking</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="intext.html">Logout</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="tracking.html">Tracking</a>
+        <a href="search.html">Search</a>
+    </div>
+
+    <div class="tracking-container">
+        <h2>Tracking Encrypted Messages</h2>
+
+        <!-- Filters for tracking -->
+        <div class="filters">
+            <label for="platform">Platform:</label>
+            <select id="platform">
+                <option value="all">All</option>
+                <option value="facebook">Facebook</option>
+                <option value="twitter">Twitter</option>
+                <option value="instagram">Instagram</option>
+            </select>
+
+            <label for="status">Status:</label>
+            <select id="status">
+                <option value="all">All</option>
+                <option value="suspicious">Suspicious</option>
+                <option value="confirmed">Confirmed</option>
+            </select>
+
+            <button id="filter-btn">Filter</button>
+        </div>
+
+        <!-- Tracking Results -->
+        <div id="tracking-results">
+            <!-- Tracking results will be dynamically added here -->
+        </div>
+    </div>
+
+    <script src="track.js"></script>
+</body>
+</html>
